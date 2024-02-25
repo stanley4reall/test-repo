@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Page</title>
+</head>
+<body>
+    <header>
+        <h1>Edit Page</h1>
+    </header>
+
+
+    <main>
+        <form action="process_edit.php" method="post">
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title" value="Article Title"><br><br>
+            
+            <label for="content">Content:</label><br>
+            <textarea id="content" name="content" rows="10" cols="50">Article content goes here...</textarea><br><br>
+            
+            <input type="submit" value="Save Changes">
+            <input type="button" value="Publish" onclick="publish()">
+            <input type="reset" value="Reset">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Group1AA1. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function publish() {
+            // JavaScript function to handle publishing
+            alert("Article published successfully!"); // Example alert
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown to HTML Converter</title>
+    <!-- Include marked.js library for markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Markdown to HTML Converter</h1>
+    </header>
+
+    <nav>
+        <!-- Navigation links -->
+        <a href="IndexPage.html">Home</a> |
+       
+    </nav>
+
+    <main>
+        <form id="markdownForm">
+            <label for="markdownInput">Enter Markdown:</label><br>
+            <textarea id="markdownInput" name="markdown" rows="10" cols="50" placeholder="Enter Markdown text here..."></textarea><br><br>
+            
+            <input type="button" value="Convert" onclick="convertMarkdown()">
+        </form>
+
+        <div id="htmlOutput">
+            <!-- HTML output will be displayed here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GROUP1AA1. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function convertMarkdown() {
+            var markdownText = document.getElementById('markdownInput').value;
+            var htmlOutput = marked(markdownText); // Convert markdown to HTML using marked.js
+            document.getElementById('htmlOutput').innerHTML = htmlOutput;
+        }
+    </script>
+</body>
+</html>

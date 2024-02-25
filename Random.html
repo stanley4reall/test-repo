@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia</title>
+    <style>
+        body{
+            margin:0%
+        }
+        #wrapper{
+        justify-content: center;
+        margin-top: 0px;
+        }
+        nav{
+            padding-top: 10px;
+            background-color: white;
+            display: flex;
+            margin: 0%;
+            justify-content: space-between;
+        }
+        .menu-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-bottom:15px;
+        margin-right: 15px;
+        }
+        .menu-icon {
+            width: 20px;
+            height: 2px;
+            background-color: gray;
+            margin: 3px 0;
+        }
+        .search-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .search-bar {
+            padding: 10px; 
+            border: 1px solid black; 
+            width: 300px;
+            border-right: 0;
+        }
+
+        .search-button {
+            position: absolute;
+            padding: 10px; 
+            background-color: white;
+            color: black; 
+            border: 1px solid black;
+            cursor: pointer;
+        }
+        #wikitext{
+            height: 50px ;
+            width: 190px;
+            padding-left: 15px;
+        }
+        #wikitext > p{
+            margin-bottom: 0;
+            margin-top: 0%;
+            font-size: small;
+        }
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        li{
+            text-decoration: none;
+            list-style-type:none ;
+        }
+        
+        #leftcontent{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            margin-left: 50px;
+        }
+        #rightcontent{
+            width: 250px;
+            margin-top: 3px;
+
+        }
+        .submenu{
+            margin: 30px 100px 100px;
+            margin-bottom: 0px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid gray;
+        }
+        #subleft{
+            display: flex;
+        }
+        #subright{
+            display: flex;
+        }
+        #subright>p, #subleft>p {
+            padding-left: 15px;
+            margin: 0%;
+        }
+        .main{
+            background-color: white;
+            margin: 25px 100px 100px;
+            height: 100%;
+        }
+        .header{
+            height: 100px;
+            text-align: center;
+            background-color: #F9F9F9;
+            border:1px solid gray;
+            margin-bottom: 10px;
+            line-height: 15px;
+        }
+        .header>p{
+            line-height: 2px;
+            font-size: small;
+        }
+        #division{
+            display: grid;
+            height: 920px;
+            grid-template-columns:50% 49% ;
+            column-gap: 10px;
+            background-color: white;
+        }
+        .leftmain{
+            background-color: whitesmoke;
+            border: 1px solid slategray;            
+        }
+        .inclass{
+            width: 95%;
+            height: 30px;
+            background-color: #CEF2E0;
+            margin-left:10px;
+            margin-top:30px;
+            font-size: large;
+            font-weight: bold;
+            flex-wrap: wrap;
+            text-wrap: wrap;
+        }
+        .inclass>p,.inclass>ul>li{
+            font-weight: normal;
+            font-size: small;
+            font-family: sans-serif;
+            list-style-type: circle;
+            margin-left: 20px;
+        }
+        .inclass>ul{
+            display: contents;
+            line-height: normal;
+            line-height: 30px;
+            margin-left: 2px;
+        }
+        .highlight{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+      <nav>
+        <div id="leftcontent">
+            <button class="menu-button">
+                <div class="menu-icon"></div>
+                <div class="menu-icon"></div>
+                <div class="menu-icon"></div>
+            </button>        
+        <img src="../ency-removebg-preview.png" height="40px" alt="logo">
+        <div id="wikitext">
+            <p style="font-family: Sans-serif; font-size: larger;">WIKIPEDIA </p><p>The free Encylopedia</p>
+        </div>
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search Wikipedia">
+            <button type="submit" class="search-button"><b>Search</b></button>
+        </div>
+    </div>
+    <div id="rightcontent">
+            <ul>
+                <li><span class="highlight">Create account</span></li>
+                <li><span class="highlight">Login</span></li>
+            </span>
+                <li>&dot;&dot;&dot;</li>
+            </ul>
+    </div>    
+      </nav>
+      <div class="submenu">
+        <div id="subleft">
+        <p>Main Page</p>
+        <p><span class="highlight">Talk</span></p>
+    </div>
+    <div id="subright">
+        <p>Read</p>
+        <p><span class="highlight">View Source</span></p>
+        <p><span class="highlight">View History</span></p>
+        <p>Tools</p>
+    </div>
+      </div>
+      <div class="main">
+        <div class="header">
+            <h2>Welcome to <span class="highlight">Wikipedia</span></h2>
+            <p>the <span class="highlight">free encyclopedia</span> that <span class="highlight">anyone can edit</span></p>
+            <p><span class="highlight">6,786,421</span> articles in <span class="highlight">English</span></p>
+        </div>
+        <div id="division">
+            <div class="leftmain">
+                <div class="inclass">
+                    <h4>From today's featured article</h4>
+                    <img src="pic1.jpg" 
+                    style="width:200px; height:200px;" hspace="15" vspace="15" align="left">     
+                    <p>
+                        The quarter sovereign is a British gold coin issued by the Royal Mint since 2009. It has been issued as a bullion coin and as a collector's coin. The smallest in the sovereign range, it has a face value of 25 pence. </p>
+                    <p>In 1853, the Royal Mint produced two patterns for a quarter sovereign for circulation, with one denominated as five shillings. These coins never went into production. In 1979, the Royal Mint began to sell sovereigns to those wishing to own gold coins, by the following year selling four different denominations, ranging from the half sovereign to the five pound gold coin. </p>
+                    <p>   In 2009, a quarter sovereign was introduced as an extension of this range. It shares the same design as the larger coins, depicting Elizabeth II on the obverse, or since 2022, Charles III. Although there are some one-year designs, the one most often used on the reverse is Benedetto Pistrucci's depiction of Saint George and the Dragon (shown), which was first used on the sovereign in 1817. (Full article...)
+                    </p>
+                    <p>
+                        Recently featured: TeloschistaceaeJohn Spencer (snooker player)
+                    </p>
+                    <p>The Legend of Zelda: Oracle of Seasons and Oracle of Ages</p>
+                    <p>  Archive By email  More featured articlesAbout</p>
+                </div>
+                <div class="inclass" style="margin-top:81%;">
+                    <h4>Did you know ....</h4>
+                    <ul>
+                        <li>... that Mike Sadler (pictured) guided nighttime raids on enemy targets as a celestial navigator during the Western De</li>
+                        <li>... that the founder of a California TV station opted not to name it for himself because the call sign would have sounded like "cough"?</li>
+                        <li>. that William N. Salin was twice decorated with the Sagamore of the Wabash?</li>
+                        <li>.. that the Soviet soprano Tamara Milashkina performed alongside her husband Vladimir Atlantov at New York's Metropolitan Opera in 1975?</li>
+                        <li>... that for a while in the 1950s, Englewood Golf Club was co-owned by four well-known comedians?</li>
+                        <li>.. that Prey is the first feature film to have a full Comanche language dub?</li>
+                        <li>... that Margaret Donahue was the first female executive in Major League Baseball?</li>
+                        <li>... that for several millennia, some humans buried corpses in their houses?</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="leftmain">
+            <div class="inclass" style="background-color:#CEDFF2;">
+                <h4>In the news</h4>
+                <img src="Mike_Sadler.jpg"
+                style="width: 200px; height: 200px;" vspace="15" hspace="15" align="right">
+                <ul>
+                    <li>At the British Academy Film Awards, Oppenheimer wins Best Film and six other awards, including Best Actor for Cillian Murphy (pictured).</li>
+                    <li>Russian opposition leader Alexei Navalny dies in a corrective labor colony near Kharp, at the age of 47.</li>
+                    <li>In American football, the Kansas City Chiefs defeat the San Francisco 49ers to win the Super Bowl</li>
+                    <li>In association football, the Africa Cup of Nations concludes with Ivory Coast defeating Nigeria in the final.</li>
+                    <li>Alexander Stubb is elected President of Finland.</li>
+                </ul>
+                <p>Ongoing: Israel–Hamas warMyanmar civil warRed Sea crisisRussian invasion of Ukraine timeline</p>
+            </div>
+            <div class="inclass" style="background-color:#CEDFF2; margin-top: 82%;">
+                <h4>On this day</h4>
+                <p>February 20: Day of the Heavenly Hundred Heroes in Ukraine (2014)</p>
+                <ul>
+                    <li>1685 : The French colonization of Texas began with the landing of colonists led by Robert de La Salle near Matagorda Bay.</li>
+                    <li>1959 : Canadian prime minister John Diefenbaker cancelled the Avro CF-105 Arrow (pictured) interceptor-aircraft program amid much political debate.</li>
+                    <li>1970 : The Wat Phra Dhammakaya in Pathum Thani province, one of the largest Buddhist temples in Thailand, was founded.</li>
+                    <li>1998 : At the age of 15, American figure skater Tara Lipinski became the youngest gold-medal winner in the history of the Winter Olympic Games at the time.</li>
+                </ul>
+                <p>Wulfric of Haselbury (d. 1154)Elizabeth Holloway Marston (b. 1893)Gail Kim (b. 1977)Tōru Takemitsu (d. 1996)</p>
+                <p>More anniversaries: February 19February 20February 21</p>
+            </div>
+            </div>
+    </div>
+      </div>
+      <div id="bottom-div">
+        <hr style="margin-left: 30px; margin-right: 30px;">
+        <p style="margin-left: 40px; margin-right: 30px; font-size: small;">Text is available under the Creative Commons Attribution-ShareAlike License 4.0; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</p>
+    </div>
+    </div>
+</body>
+</html>
